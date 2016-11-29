@@ -1,0 +1,162 @@
+@import 'fonts';
+
+html{
+  margin: 0;
+  padding:0 ;
+}
+body {
+  margin: 0;
+  padding:0 ;
+  width: 100%;
+  background: url('../images/nietzsche.png') top center no-repeat;
+  background-size: auto 1100px;
+  header{
+    margin: 0 0 20px 0;
+    color:white;
+    padding: 15px 0 25px 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }
+  .container{
+    position: relative;
+    background-color: white;
+    border: 4px solid black;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    header{
+      padding: 40px 0 55px 70px;
+    }
+    &.begin{
+      position: relative;
+      height: 800px;
+      background: transparent;
+      padding-top: 150px;
+      margin-bottom: 0;
+      border: none;
+      color: white;
+      text-shadow: 0px 0px 20px rgba(0,0,0, 0.5);
+      p{
+        padding-left: 0;
+      }
+      img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+          //float: left;
+      }
+    }
+    &.philosophy{
+      padding-bottom: 40px;
+    }
+    .sculp{
+      float: right;
+    }
+    &.video{
+      padding: 40px;
+    }
+    &.work{
+      .slider{
+        margin: 60px 0 30px 0;
+        padding: 0 70px 0 70px;
+        max-height:800px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        .buttonBack{
+          position: relative;
+          border:none;
+          flex-grow: 1;
+          width: 100px;
+          height: 100px;
+          background: url('../images/arrowBack.png') center center no-repeat;
+          background-size: contain;
+          cursor: pointer;
+          opacity: .7;
+          -moz-transition: opacity .4s;
+          &:hover{
+            opacity: 1;
+          }
+        }
+        .bookCover{
+          //max-height: 800px;
+          width: 200px;
+          margin: 0 20px 0 20px;
+          flex-grow: 3;
+        }
+        .buttonNext{
+          position: relative;
+          flex-grow: 1;
+          border:none;
+          width: 100px;
+          height: 100px;
+          background: url('../images/arrowNext.png') center center no-repeat;
+          background-size: contain;
+          cursor: pointer;
+          opacity: .7;
+          -moz-transition: opacity .4s;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+      .price{
+        font-size: 24px;
+        text-align: center;
+        color: #232eb4;
+      }
+      .buyNow{
+        display: block;
+        margin: 10px auto 40px auto;
+        font-size: 24px;
+        padding: 10px 50px 10px 50px;
+        background-color: #f6ea5e;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        -moz-transition: box-shadow .4s;
+        img{
+          height: 20px;
+          margin: 0 0 5px 10px;
+        }
+        &:hover{
+          box-shadow: 0px 0px 15px rgba(0,0,0, 0.3);
+        }
+      }
+    }
+  }
+  .quotes{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    .row{
+      margin-bottom: 0;
+      .quotesText{
+        border:none;
+        background-color: black;
+        color: white;
+        height: 100%;
+        padding-bottom: 50px;
+        h2{
+          padding-top: 30px;
+          padding-bottom: 30px
+        }
+        p{
+          font-weight: 300;
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+      .quotesPic{
+        border: none;
+        padding: 0;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
