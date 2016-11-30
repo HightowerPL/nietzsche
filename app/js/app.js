@@ -15,13 +15,13 @@ $(document).ready(function(){
     }).fadeIn(1000);
   }
 
-  $('.buttonNext').on('click', function(){
+  $('.btnNext').on('click', function(){
     $(this).animate({left: '10px'}, 'fast');
     $(this).animate({left: '-10px'}, 'fast');
     i++;
     coverChange();
   });
-  $('.buttonBack').on('click', function(){
+  $('.btnBack').on('click', function(){
     $(this).animate({left: '-10px'}, 'fast');
     $(this).animate({left: '10px'}, 'fast');
     i--;
